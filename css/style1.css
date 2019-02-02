@@ -1,0 +1,204 @@
+*{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+          
+}
+
+.clearfix:after,.clearfix:before {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+.wrapper{
+    margin:0 auto;
+
+    max-width: 990px;
+    padding: 0 10px;    
+}
+
+.caption{
+    padding: 55px 15px 22px;
+}
+
+.caption p.text1{    
+    line-height: 60px;
+    font-size: 48px;
+    color: #fff;
+    margin-bottom: 22px;
+}
+
+.caption p.text2{
+    line-height: 30px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.contact_form{
+    /*background: url("../images/bg.png") no-repeat 50% / cover fixed;*/
+    background: -webkit-linear-gradient(315.12deg, #FF0000 -41.19%, #D827C0 -1.23%, #6139F6 28.57%, #6139F6 51.17%, #20BFFF 93.85%),url(../images/bg.png),#EAEFF4;
+    background: -o-linear-gradient(315.12deg, #FF0000 -41.19%, #D827C0 -1.23%, #6139F6 28.57%, #6139F6 51.17%, #20BFFF 93.85%),url(../images/bg.png),#EAEFF4;
+    background: linear-gradient(134.88deg, #FF0000 -41.19%, #D827C0 -1.23%, #6139F6 28.57%, #6139F6 51.17%, #20BFFF 93.85%),url(../images/bg.png),#EAEFF4;
+    background-blend-mode: hard-light;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 700px;    
+}
+ 
+form{
+    width: 1000px;
+}
+
+label{
+    position: relative;
+    color: rgba(255, 255, 255, 01);
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 24px;
+    margin-left: 16px;
+}
+
+textarea, input{
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    border: none;
+    font-family: Open Sans;
+    font-style: italic;
+    line-height: 30px;
+    font-size: 16px;
+    padding: 10px 0 0 16px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+form .fa-check { visibility: hidden;}
+form label.field-checked .fa-check { visibility: visible;}
+
+/*form .fa-check { display:none;}
+form label.field-checked .fa-check { display: block;}*/
+
+.fa {
+    position: absolute;
+    top: 28px;
+    right: 10px;
+    color: #5CA0EA;
+    font-size: 23px;
+}
+
+
+.registration_form{
+    width: 50%;
+    float: left;
+    padding-right: 12px;
+}
+
+.message_text{
+    width: 50%;
+    float: left;
+    padding-left: 12px;
+}
+
+.registration_form p,
+.message_text p{
+    position: relative;
+    background: rgba(22, 0, 132, 0.2);
+    border-radius: 3px;
+    padding: 6px 12px 10px;
+    margin-bottom: 20px;
+
+}
+
+textarea{
+    height: 335px;
+}
+
+
+.button{
+    width: 220px;
+    clear: both;
+}
+
+.button input{
+    margin-top: 15px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.075) 0%, rgba(0, 0, 0, 0.075) 100%), -webkit-linear-gradient(190.26deg, #90278E 46.83%, #EC1C24 146.83%);
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 0.075) 0%, rgba(0, 0, 0, 0.075) 100%), -o-linear-gradient(190.26deg, #90278E 46.83%, #EC1C24 146.83%);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.075) 0%, rgba(0, 0, 0, 0.075) 100%), linear-gradient(259.74deg, #90278E 46.83%, #EC1C24 146.83%);
+    border-radius: 3px;
+    color: #fff;
+    padding: 0px;
+}
+
+@media (max-width: 1000px){
+    .wrapper{
+         max-width: 760px;
+    }
+
+@media all and (max-width: 760px){
+    form{
+        width: 100%;
+        height: auto;
+    }
+    .contact_form{
+        height: auto;
+    }
+    .registration_form,
+    .message_text {
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+     .button{
+       padding-bottom: 22px;
+    }
+}
+
+}
+
+.registration:focus, textarea:focus { background: #fff; opacity: 1; }
+
+::placeholder { 
+    color: #fff;
+    margin: 10px;
+
+} 
+
+::-webkit-input-placeholder { 
+    color: #fff;
+    margin: 10px;
+
+}
+
+
+::-ms-input-placeholder { 
+    color: #fff;
+    margin: 10px;
+
+}
+
+
+::-ms-input-placeholder { 
+    color: #fff;
+    margin: 10px;
+
+}
+
+

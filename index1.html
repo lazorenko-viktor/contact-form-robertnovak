@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>contact-form</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/style1.css"> -->
+	<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>  -->
+	<link rel="stylesheet" type="text/css" href="css/style1.css">
+	
+</head>
+<body>
+	<div class="contact_form">
+		<div class="caption wrapper">
+			<p class="text1">Contact Us!</p>
+			<p class="text2">Got a question? We'll give you straight answers!</p>
+		</div>
+		<form class="wrapper" action="#" name="Myform">
+			<!-- <div class="message_form clearfix"> -->		
+				<div class="registration_form">
+					<p>
+						<label for="name" >name
+							<input class="registration" id="name" type="text" placeholder="Please enter your name" required>
+							<i class="fa fa-check" aria-hidden="true" ></i>
+						</label>
+
+					</p>
+					<p>
+						<label for="company">company
+							<input class="registration" id="company" type="text" placeholder="Leave it empty if you don't have a name" required>
+							<i class="fa fa-check" aria-hidden="true" ></i>
+						</label>
+						
+					</p>
+					<p>
+						<label for="phone">telphone
+							<input class="registration" id="phone" type="tel" pattern="[0-9]{1,3}[0-9]{6,10}"  placeholder="Please, enter your land or mobile phone" required>
+							<i class="fa fa-check" aria-hidden="true" ></i>
+						</label>
+						
+					</p>
+					<p>
+						<label for="email">email
+							<input class="registration" id="email" type="email" placeholder="Your email address" required >
+							<i class="fa fa-check" aria-hidden="true" ></i>
+						</label>
+					</p>
+				</div>
+				<div class="message_text">				
+					<p>
+						<label for="text">message
+							<textarea  id="message" maxlength="600" placeholder="Please, describe something about your project ..." required ></textarea>
+						</label>
+					</p>
+				</div>
+			<!-- </div> -->
+			<div class="button">
+				<input type="submit" value="send message" >
+			</div>	
+		</form>
+			<p><label>Телефон:<br>
+			+38 <select>
+				<option>067</option>
+				<option>069</option>
+				<option>097</option>
+			</select>
+			<input class="phone1" placeholder="___-__-__"></label></p>
+
+			<p><label>Телефон:<br><input class="phone" placeholder="+38(0382) __-__-__"></label></p>
+			<p><label>Дата народження:<br><input class="date" placeholder="дд-мм-рррр"></label></p>
+			<p><label>Ціна:<br><input class="price"></label></p>
+			<p><label>Ціна2:<br><input class="price2"></label></p>
+			<p>Кількість: <span id="count">0</span><input type="hidden" class="count"></p>
+			<div style="width:300px;"><div class="povzunok"></div></div>
+	</div>
+	<link type="text/css" rel="stylesheet" href="js/nouislider.min.css">
+	<script src="js/nouislider.min.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/codes.js"></script>
+	<!-- <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+	</script> -->	
+</body>
